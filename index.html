@@ -10,8 +10,36 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <!-- adding theme -->
  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+ <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/logo.png">
+  <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+<style>
+.outfit,*{
+  font-family: "Outfit", sans-serif;
+}
+</style>
   </head>
-  <body>
-   <h1>hello ji</h1>
+  <body class="min-h-screen max-w-md bg-base-200 mx-auto flex flex-col items-center">
+    <div class="pt-21">
+        <img src="./assets/Logo-full.png " alt="">
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 mt-5">
+      <div class="card-body rounded-xl ">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold text-xl ">Mobile Number</label>
+          <input id="mobile" type="email" minlength="11" maxlength="11" class="input bg-base-200 rounded-full " placeholder="Enter your number" />
+          <label class="label text-xl text-neutral font-bold">4 Digit Pin</label>
+          <input id="pin" type="password" maxlength="4" class="input bg-base-200 rounded-full" placeholder="Enter 4 Digit Pin" />
+        
+          <button id="btn-login" class="btn btn-primary mt-4 rounded-full text-[20px]">Login</button>
+        </fieldset>
+      </div>
+    </div>
   </body>
+  <script src="./file.js"></script>
 </html>
